@@ -1,6 +1,6 @@
-<HTML>
-<HEAD>
-<SCRIPT LANGUAGE="JavaScript">
+<html>
+<head>
+<script language="JavaScript">
 // <!--
 
 var pv = "g";
@@ -18,7 +18,7 @@ for ( x = 0; x < parent.pav; x++ )
   parent.a[x] = window.document.forms[x].a.value;
 }
 
-document.write('<SCRIPT LANGUAGE="JavaScript">');
+document.write('<script language="JavaScript">');
 document.write('var numwords = ');
 document.write( parent.pav );
 document.write(';' );
@@ -87,17 +87,17 @@ document.write('    {');
 document.write('        alert( "Give it another try." );');
 document.write('    }');
 document.write('}');
-document.write('</SCRIPT>');
-document.write('</HEAD>');
-document.write('<BODY>');
+document.write('</script>');
+document.write('</head>');
+document.write('<body>');
 
-document.write('<FORM NAME="flashcard" onSubmit="Check();return false;">');
-document.write('Card Number: <INPUT TYPE="text" SIZE=3 name="number"><BR>');
-document.write('Question: <INPUT TYPE="text" SIZE=100 name="def"><BR>');
-document.write('Enter the answer:<INPUT TYPE="text" name="word"><BR>');
-document.write('<INPUT TYPE="submit" VALUE="Am I right?"><INPUT TYPE="button" value="New one" onClick="NewOne();"><INPUT TYPE="button" value="New random one" onClick="NewRandomOne();">');
-document.write('</FORM>');
-document.write('<SCRIPT LANGUAGE="JavaScript">');
+document.write('<form name="flashcard" onSubmit="Check();return false;">');
+document.write('Card Number: <input type="text" size="3" name="number"><br />');
+document.write('Question: <input type="text" size="100" name="def"><br />');
+document.write('Enter the answer:<input type="text" name="word"><br />');
+document.write('<input type="submit" value="Am I right?"><input type="button" value="New one" onClick="NewOne();"><input type="button" value="New random one" onClick="NewRandomOne();">');
+document.write('</form>');
+document.write('<script language="JavaScript">');
 document.write('if ( parent.frames.length != 0 )');
 document.write('{');
 document.write("document.write('Note: If the page appears to still be loading, it probably is done if you are reading this message.  The web browser is probably just confused from the way this program works.');");
@@ -108,31 +108,30 @@ document.write('{');
 document.write('document.write("To save, just go to File:Save As in order to save the flash cards to your hard drive.");');
 document.write('}');
 document.write('Reset();NewOne();');
-document.write('</SCRIPT>');
+document.write('</script>');
 
 }
 // -->
-</SCRIPT>
-</HEAD>
-<BODY>
-<CENTER>JavaScript Flash Card Writer v1.0</CENTER>
-<P>
-<TABLE>
-<TR><TH>Question</TH><TH>Answer</TH></TR>
-<SCRIPT LANGUAGE="JavaScript">
+</script>
+</head>
+<body>
+<center>JavaScript Flash Card Writer v1.0</center>
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<script language="JavaScript">
 
   for ( x = 1; x <= parent.pav; x++ )
   {
-    document.write( '<FORM NAME="' );
+    document.write( '<form name="' );
     document.write( x );
-    document.write( '"><TR><TD><INPUT TYPE="text" NAME="q"></TD><TD><INPUT TYPE="text" NAME="a"></TD></TR></FORM>' );
+    document.write( '"><tr><td><input type="text" name="q"></td><td><input type="text" NAME="a"></td></tr></form>' );
   }
 
 // !-->
-</SCRIPT>
-</TABLE>
-<FORM>
-<INPUT TYPE="button" VALUE="Quiz Me!" onClick="QuizMe()">
-</FORM>
-</BODY>
-</HTML>
+</script>
+</table>
+<form>
+<input type="button" value="Quiz Me!" onClick="QuizMe()">
+</form>
+</body>
+</html>
